@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: #E5D9F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .app-section{
+    height: 100%;
+    width: 500px;
+    background-color: #F5EFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* top section */
+
+.container .app-section .top{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+}
+.container .app-section .top .heading{
+    font-size: 40px;
+    font-weight: 800;
+    color: #7371FC;
+    text-align: center;
+}
+.container .app-section .top .input-section{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.container .app-section .top .input-section input{
+    width: 80%;
+    height: 70%;
+    padding: 15px;
+    border-radius: 50px;
+    border: 3px solid #7371FC;
+    outline: none;
+    font-size: 20px;
+    
+}
+
+.button{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    background-color: #F5EFFF;
+    border: 2px solid #7371FC;
+    color: #7371FC;
+    font-weight: 800;
+    transition: all 0.1s linear;
+}
+.button:hover{
+    background-color: #7371FC;
+    color: #F5EFFF;
+}
+
+.container .app-section .top .input-section .fa-pen-to-square{
+    color: #7371FC;
+    cursor: pointer;
+    transition: all 0.1s linear;
+    font-size: 30px;
+}
+.container .app-section .top .input-section .fa-pen-to-square:hover{
+    color: #A594F9;
+}
+
+
+/* bottom section */
+.container .app-section .bottom{
+    height: 70%;
+    width: 100%;
+    background-color: #CDC1FF;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+}
+.container .app-section .bottom .todo-section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    overflow: scroll;
+    height: 90%;
+    width: 100%;
+}
+.container .app-section .bottom .todo-section::-webkit-scrollbar{
+    display: none;
+}
+
+.container .app-section .bottom .todo-section .todo{
+    width: 100%;
+    min-height: 60px;
+    padding: 2px 4px;
+    background-color: #F5EFFF;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container .app-section .bottom .todo-section .todo p{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    font-weight: 500;
+    overflow: scroll;
+}
+.container .app-section .bottom .todo-section .todo p::-webkit-scrollbar{
+    display: none;
+}
+.container .app-section .bottom .todo-section .todo .button-section{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 22px;
+
+}
+.container .app-section .bottom .todo-section .todo .button-section .fa-pen-to-square{
+    color: #7371FC;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+.container .app-section .bottom .todo-section .todo .button-section .fa-pen-to-square:hover{
+    color: #A594F9;
+}
+.container .app-section .bottom .todo-section .todo .button-section .fa-trash{
+    color: #7371FC;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+.container .app-section .bottom .todo-section .todo .button-section .fa-trash:hover{
+    color: #ff0000;
+}
